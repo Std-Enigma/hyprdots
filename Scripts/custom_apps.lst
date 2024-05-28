@@ -24,3 +24,14 @@ neovim                                                 # vim based text editor
 neovide                                                # fancy and modern neovim client
 aseprite                                               # greatest pixel art software ever
 visual-studio-code-bin                                 # modern code editor
+
+# --------------------------------------------------- // Cli
+bat                                                    # provides better cat command
+fzf                                                    # command line fuzzy finder
+gdu                                                    # fast disk usage analyzer for command line
+tldr                                                   # simplified pages for the man command
+zoxide                                                 # provides smarter cd command
+bottom                                                 # command line process/system monitor tool
+lazygit                                                # simple terminal ui for git
+thefuck                                                # helper to correct your previous typed command
+neofetch                                               # command line system information tool
