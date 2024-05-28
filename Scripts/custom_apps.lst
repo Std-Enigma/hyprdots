@@ -26,10 +26,12 @@ aseprite                                               # greatest pixel art soft
 visual-studio-code-bin                                 # modern code editor
 
 # --------------------------------------------------- // Cli
+git                                                    # version control program
 bat                                                    # provides better cat command
 fzf                                                    # command line fuzzy finder
 gdu                                                    # fast disk usage analyzer for command line
 tldr                                                   # simplified pages for the man command
+unzip                                                  # command line to unzip .zip archives
 zoxide                                                 # provides smarter cd command
 bottom                                                 # command line process/system monitor tool
 lazygit                                                # simple terminal ui for git
