@@ -145,7 +145,7 @@ fgp="#cdd6f4"
 # prompt and info color
 pi="#cba6f7"
 # spinner, pointer and marker color
-spm="f5e0dc"
+spm="#f5e0dc"
 
 export FZF_DEFAULT_OPTS=" \
 --color=bg+:$bgp,bg:$bg,spinner:$spm,hl:$ha \
