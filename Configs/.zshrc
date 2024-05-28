@@ -93,13 +93,15 @@ pokemon-colorscripts --no-title -r 1,3,6
 # Set up fzf key bindings and fuzzy completion
 eval "$(fzf --zsh)"
 
+# -- Use fd instead of fzf --
+
 export FZF_DEFAULT_COMMAND="fd --hidden --strip-cwd-prefix --exclude .git"
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 export FZF_ALT_C_COMMAND="fd --type=d --hidden --strip-cwd-prefix --exclude .git"
 
-# Use fd (https://github.com/sharkdp/fd) for listing path candidates
-# - The first argument to the function ($1) is the base path to start traversal.
-# - See the source code (completion.{bash.zsh}) for the details.
+# Use fd (https://github.com/sharkdp/fd) for listing path candidates.
+# - The first argument to the function ($1) is the base path to start traversal
+# - See the source code (completion.{bash,zsh}) for the details.
 _fzf_compgen_path() {
   fd --hidden --exclude .git . "$1"
 }
@@ -108,6 +110,8 @@ _fzf_compgen_path() {
 _fzf_compgen_dir() {
   fd --type=d --hidden --exclude .git . "$1"
 }
+
+source ~/fzf-git/fzf-git.sh
 
 show_file_or_dir_preview="if [ -d {} ]; then eza --tree --color=always {} | head -200; else bat -n --color=always --line-range :500 {}; fi"
 
@@ -129,9 +133,6 @@ _fzf_comprun() {
   esac
 }
 
-# Load fzf-git
-source ~/fzf-git.sh/fzf-git.sh
-
 # setup fzf theme
 ha="#f38ba8"
 
@@ -141,8 +142,10 @@ bgp="#313244"
 fg="#cdd6f4"
 fgp="#cdd6f4"
 
-pi="#cba6f7" # prompt and info color
-spm="f5e0dc" # spinner, pointer and marker color
+# prompt and info color
+pi="#cba6f7"
+# spinner, pointer and marker color
+spm="f5e0dc"
 
 export FZF_DEFAULT_OPTS=" \
 --color=bg+:$bgp,bg:$bg,spinner:$spm,hl:$ha \
