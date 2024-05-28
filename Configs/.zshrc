@@ -144,3 +144,8 @@ marker="#f5e0dc"
 pmt="#cba6f7" # prompt color
 
 export FZF_DEFAULT_OTPS="--color=bg+:${bgp},bg:${bg},spinner:${spinner},hl:${hl},fg:${fg},header:${header},info:${info},pointer:${pointer},marker=${marker},fg+:${fgp},prompt:${pmt},hl+:${hlp}"
+
+# ---- Bat (better cat) ----
+
+alias cat="bat"
+export BAT_THEME="Catppuccin Mocha"
