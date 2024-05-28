@@ -35,3 +35,16 @@ bottom                                                 # command line process/sy
 lazygit                                                # simple terminal ui for git
 thefuck                                                # helper to correct your previous typed command
 neofetch                                               # command line system information tool
+
+# --------------------------------------------------- // Programming Languages
+go                                                     # go programming language
+npm                                                    # javascript package manager
+lua                                                    # lua programming language
+rust                                                   # rust programming language
+python                                                 # python programming language
+nodejs                                                 # V8 javascript runtime
+jdk17-openjdk                                          # java development kit version 17.0
+jdk21-openjdk                                          # java development kit version 21.0
+dotnet-sdk-6.0                                         # dotnet development kit version 6.0
+dotnet-sdk-7.0                                         # dotnet development kit version 7.0
+dotnet-sdk                                             # dotnet development kit version 8.0
