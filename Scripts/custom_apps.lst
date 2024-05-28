@@ -37,6 +37,7 @@ bottom                                                 # command line process/sy
 lazygit                                                # simple terminal ui for git
 thefuck                                                # helper to correct your previous typed command
 neofetch                                               # command line system information tool
+github-cli                                             # github command line tool
 
 # --------------------------------------------------- // Programming Languages
 go                                                     # go programming language
