@@ -109,8 +109,10 @@ _fzf_compgen_dir() {
   fd --type=d --hidden --exclude .git . "$1"
 }
 
-export FZF_CTRL_T_OPTS="--preview 'bat -n --color=always --line-range :500 {}'"
-export FZF_ALT_C_OPTS="--preview 'eza --tree --color=always {} | head --200'"
+show_file_or_dir_preview="if [ -d {} ]; then eza --tree --color=always {} | head -200; else bat -n --color=always --line-range :500 {}; fi"
+
+export FZF_CTRL_T_OPTS="--preview '$show_file_or_dir_preview'"
+export FZF_ALT_C_OPTS="--preview 'eza --tree --color=always {} | head -200'"
 
 # Advanced customization of fzf options via _fzf_comprun function
 # - The first argument to the function is the name of the command.
@@ -119,31 +121,33 @@ _fzf_comprun() {
   local command=$1
   shift
 
-  case "%command" in
-    cd)           fzf --preview 'eza --tree --color=always {} | head --200' "$@" ;;
-    export|unset) fzf --preview "eval 'echo \$' {}" "$@" ;;
-    ssh)          fzf --preview 'dig {}' "$@" ;;
-    *)            fzf --preview "--preview 'bat -n --color=always --line-range :500 {}'" "$@" ;;
+  case "$command" in
+    cd)           fzf --preview 'eza --tree --color=always {} | head -200' "$@" ;;
+    export|unset) fzf --preview "eval 'echo \${}'"         "$@" ;;
+    ssh)          fzf --preview 'dig {}'                   "$@" ;;
+    *)            fzf --preview "$show_file_or_dir_preview" "$@" ;;
+  esac
 }
 
 # Load fzf-git
 source ~/fzf-git.sh/fzf-git.sh
 
 # setup fzf theme
-hl="#f38ba8"
-hlp="#f38ba8"
+ha="#f38ba8"
+
 bg="#1e1e2e"
 bgp="#313244"
+
 fg="#cdd6f4"
 fgp="#cdd6f4"
-spinner="#f5e0dc"
-header="#f38ba8"
-info="#cba6f7"
-pointer="#f5e0dc"
-marker="#f5e0dc"
-pmt="#cba6f7" # prompt color
 
-export FZF_DEFAULT_OTPS="--color=bg+:${bgp},bg:${bg},spinner:${spinner},hl:${hl},fg:${fg},header:${header},info:${info},pointer:${pointer},marker=${marker},fg+:${fgp},prompt:${pmt},hl+:${hlp}"
+pi="#cba6f7" # prompt and info color
+spm="f5e0dc" # spinner, pointer and marker color
+
+export FZF_DEFAULT_OPTS=" \
+--color=bg+:$bgp,bg:$bg,spinner:$spm,hl:$ha \
+--color=fg:$fg,header:$ha,info:$info,pointer:$spm \
+--color=marker:$spm,fg+:$fgp,prompt:$pi,hl+:$ha"
 
 # ---- Bat (better cat) ----
 
