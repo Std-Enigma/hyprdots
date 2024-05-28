@@ -149,3 +149,9 @@ export FZF_DEFAULT_OTPS="--color=bg+:${bgp},bg:${bg},spinner:${spinner},hl:${hl}
 
 alias cat="bat"
 export BAT_THEME="Catppuccin Mocha"
+
+# ---- TheFuck ----
+
+# thefuck alias
+eval $(thefuck --alias)
+eval $(thefuck --alias fk)
