@@ -89,3 +89,5 @@ wget -P "$(bat --config-dir)/themes" https://github.com/catppuccin/bat/raw/main/
 wget -P "$(bat --config-dir)/themes" https://github.com/catppuccin/bat/raw/main/themes/Catpuccin%20Macchiato.tmTheme
 wget -P "$(bat --config-dir)/themes" https://github.com/catppuccin/bat/raw/main/themes/Catpuccin%20Mocha.tmTheme
 bat cache --build
+
+echo "Don't forget to setup git-delta in your git config with the side by side option to true"
