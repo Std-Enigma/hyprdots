@@ -21,3 +21,6 @@ cava                                                   # audio visualizer
 
 # --------------------------------------------------- // Apps
 neovim                                                 # vim based text editor
+neovide                                                # fancy and modern neovim client
+aseprite                                               # greatest pixel art software ever
+visual-studio-code-bin                                 # modern code editor
