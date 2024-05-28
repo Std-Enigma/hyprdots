@@ -48,3 +48,8 @@ jdk21-openjdk                                          # java development kit ve
 dotnet-sdk-6.0                                         # dotnet development kit version 6.0
 dotnet-sdk-7.0                                         # dotnet development kit version 7.0
 dotnet-sdk                                             # dotnet development kit version 8.0
+
+# --------------------------------------------------- // Extras
+fd                                                     # file system entry finder
+ripgrep                                                # recursively searches directories for a regex pattern
+git-delta                                              # a syntax-highlighting pager for git
