@@ -8,25 +8,25 @@ io.gitlab.adhami3310.Impression                # Impression
 # io.github.dimtpap.coppwr                     # Coppwr
 
 # ------------------------------------------- // Browser
-com.brave.Browser                              # Brave
+# com.brave.Browser                            # Brave
 # org.torproject.torbrowser-launcher           # Tor
 
 # ------------------------------------------- // Social
 # org.signal.Signal                            # Signal
-# com.discordapp.Discord                       # Discord
+com.discordapp.Discord                         # Discord
 # dev.vencord.Vesktop                          # Vesktop
-io.github.spacingbat3.webcord                  # Webcord
+# io.github.spacingbat3.webcord                # Webcord
 
 # ------------------------------------------- // Productivity
 # md.obsidian.Obsidian                         # Obsidian
 # org.mozilla.Thunderbird                      # Thunderbird
-# io.github.alainm23.planify                   # Planify
+io.github.alainm23.planify                     # Planify
 
 # ------------------------------------------- // Image/Graphics
-org.inkscape.Inkscape                          # Inkscape
-org.kde.krita                                  # Krita
-org.gimp.GIMP                                  # Gimp
-org.blender.Blender                            # Blender
+# org.inkscape.Inkscape                        # Inkscape
+# org.kde.krita                                # Krita
+# org.gimp.GIMP                                # Gimp
+# org.blender.Blender                          # Blender
 io.gitlab.theevilskeleton.Upscaler             # ImageUpscaler
 
 # ------------------------------------------- // Photography
@@ -43,6 +43,6 @@ com.github.rafostar.Clapper                    # Clapper
 com.github.unrud.VideoDownloader               # VideoDownloader
 
 # ------------------------------------------- // Gaming
-# hu.kramo.Cartridges                          # Cartridges
+hu.kramo.Cartridges                            # Cartridges
 # com.github.Matoking.protontricks             # ProtonTricks
 # net.davidotek.pupgui2                        # ProtonUp
