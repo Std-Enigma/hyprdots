@@ -90,6 +90,5 @@ wget -P "$(bat --config-dir)/themes" https://github.com/catppuccin/bat/raw/main/
 wget -P "$(bat --config-dir)/themes" https://github.com/catppuccin/bat/raw/main/themes/Catppuccin%20Mocha.tmTheme
 bat cache --build
 
-# Change the glow markdown renderer style to catppuccin
-wget ~/Documents https://github.com/catppuccin/glamour/blob/main/themes/catppuccin-mocha.json
-glow -s ~/Documents/cattpuccin-mocha.json
+# Download the catppuccin glamour style
+wget -P ~/Documents https://raw.githubusercontent.com/catppuccin/glamour/main/themes/catppuccin-mocha.json
