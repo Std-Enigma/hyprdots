@@ -30,6 +30,7 @@ git                                                    # version control program
 bat                                                    # provides better cat command
 fzf                                                    # command line fuzzy finder
 gdu                                                    # fast disk usage analyzer for command line
+glow                                                   # markdown renderer for command line
 tldr                                                   # simplified pages for the man command
 unzip                                                  # command line to unzip .zip archives
 zoxide                                                 # provides smarter cd command
