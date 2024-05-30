@@ -91,5 +91,5 @@ wget -P "$(bat --config-dir)/themes" https://github.com/catppuccin/bat/raw/main/
 bat cache --build
 
 # Change the glow markdown renderer style to catppuccin
-wget "~/glamour-style.json" https://github.com/catppuccin/glamour/blob/main/themes/catppuccin-mocha.json
-glow -s "~/glamour-style.json"
+wget ~/Documents https://github.com/catppuccin/glamour/blob/main/themes/catppuccin-mocha.json
+glow -s ~/Documents/cattpuccin-mocha.json
