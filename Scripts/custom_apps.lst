@@ -41,6 +41,7 @@ neofetch                                               # command line system inf
 man-db                                                 # tools for reading manual pages
 man-pages                                              # linux manual pages
 github-cli                                             # github command line tool
+tree-sitter-cli                                        # nvim-treesitter cli tool
 
 # --------------------------------------------------- // Programming Languages
 go                                                     # go programming language
