@@ -20,6 +20,7 @@ cava                                                   # audio visualizer
 # spicetify-cli                                        # cli to customize spotify client
 
 # --------------------------------------------------- // Apps
+zed                                                    # robust and lightweight code editor
 neovim                                                 # vim based text editor
 neovide                                                # fancy and modern neovim client
 aseprite                                               # greatest pixel art software ever
@@ -31,6 +32,7 @@ bat                                                    # provides better cat com
 fzf                                                    # command line fuzzy finder
 gdu                                                    # fast disk usage analyzer for command line
 glow                                                   # markdown renderer for command line
+yazi                                                   # file explorer for command line
 tldr                                                   # simplified pages for the man command
 unzip                                                  # command line to unzip .zip archives
 zoxide                                                 # provides smarter cd command
