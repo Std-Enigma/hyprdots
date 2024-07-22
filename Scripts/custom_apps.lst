@@ -16,7 +16,7 @@ gamescope                                              # micro-compositor for ga
 
 # --------------------------------------------------- // Music
 cava                                                   # audio visualizer
-apple-music-desktop                                    # native Apple Music experience for Linux
+apple-music-bin                                        # native Apple Music experience for Linux
 # spotify                                              # proprietary music streaming service
 # spicetify-cli                                        # cli to customize spotify client
 
