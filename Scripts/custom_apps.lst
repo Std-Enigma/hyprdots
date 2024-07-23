@@ -13,6 +13,7 @@ steam                                                  # gaming platform
 gamemode                                               # daemon and library for game optimisations
 mangohud                                               # system performance overlay
 gamescope                                              # micro-compositor for gaming
+gdlauncher-bin                                         # simple, yet powerful Minecraft launcher
 
 # --------------------------------------------------- // Music
 cava                                                   # audio visualizer
