@@ -65,4 +65,5 @@ fd                                                     # file system entry finde
 ripgrep                                                # recursively searches directories for a regex pattern
 git-delta                                              # a syntax-highlighting pager for git
 os-prober                                              # used by grub for windows boot manager detection
+luarocks                                               # package manager for lua programming language
 
