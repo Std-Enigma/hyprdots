@@ -66,4 +66,4 @@ ripgrep                                                # recursively searches di
 git-delta                                              # a syntax-highlighting pager for git
 os-prober                                              # used by grub for windows boot manager detection
 luarocks                                               # package manager for lua programming language
-
+sqlite                                                 # C library that implements an SQL database engine
