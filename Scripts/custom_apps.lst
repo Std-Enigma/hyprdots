@@ -60,6 +60,12 @@ dotnet-sdk-6.0                                         # dotnet development kit 
 dotnet-sdk-7.0                                         # dotnet development kit version 7.0
 dotnet-sdk                                             # dotnet development kit version 8.0
 
+# --------------------------------------------------- // Fonts
+ttf-jetbrains-mono-nerd                                # JetBrains mono nerd font
+ttf-ubuntu-mono-nerd                                   # Ubuntu mono nerd font
+ttf-hack-nerd                                          # Hack nerd font
+ttf-hack-nerd                                          # Hack nerd font
+
 # --------------------------------------------------- // Extras
 fd                                                     # file system entry finder
 ripgrep                                                # recursively searches directories for a regex pattern
